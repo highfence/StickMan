@@ -3,16 +3,15 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 13
-  productGUID: abd8946e979219841b0458a28648f6bd
+  serializedVersion: 12
+  productGUID: 3333da8360a8d3644b4c2e04f4261c5d
   AndroidProfiler: 0
-  AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: StickMan
+  companyName: idreamzStudio
+  productName: ArcheryClash
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -39,6 +38,8 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos: []
+  m_SplashScreenBackgroundLandscape: {fileID: 0}
+  m_SplashScreenBackgroundPortrait: {fileID: 0}
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -48,6 +49,7 @@ PlayerSettings:
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
+  m_MobileMTRendering: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
@@ -55,18 +57,16 @@ PlayerSettings:
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
   iosAllowHTTPDownload: 1
-  allowedAutorotateToPortrait: 1
-  allowedAutorotateToPortraitUpsideDown: 1
+  allowedAutorotateToPortrait: 0
+  allowedAutorotateToPortraitUpsideDown: 0
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   disableDepthAndStencilBuffers: 0
-  androidBlitType: 0
   defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
-  macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -95,7 +95,6 @@ PlayerSettings:
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
   xboxEnablePIXSampling: 0
-  metalFramebufferOnly: 0
   n3dsDisableStereoscopicView: 0
   n3dsEnableSharedListOpt: 1
   n3dsEnableVSync: 0
@@ -104,7 +103,6 @@ PlayerSettings:
   xboxOneMonoLoggingLevel: 0
   xboxOneLoggingLevel: 1
   xboxOneDisableEsram: 0
-  xboxOnePresentImmediateThreshold: 0
   videoMemoryForVertexBuffers: 0
   psp2PowerMode: 0
   psp2AcquireBGM: 1
@@ -136,18 +134,14 @@ PlayerSettings:
     daydream:
       depthFormat: 0
       useSustainedPerformanceMode: 0
-      enableVideoLayer: 0
-      useProtectedVideoMemory: 0
     hololens:
       depthFormat: 1
   protectGraphicsMemory: 0
   useHDRDisplay: 0
-  m_ColorGamuts: 00000000
   targetPixelDensity: 0
   resolutionScalingMode: 0
-  androidSupportedAspectRatio: 1
-  androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.idreamzstudio.archeryclash
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -167,10 +161,10 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 7.0
+  iOSTargetOSVersionString: 
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
-  tvOSTargetOSVersionString: 9.0
+  tvOSTargetOSVersionString: 
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -220,34 +214,37 @@ PlayerSettings:
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
   appleEnableAutomaticSigning: 0
-  AndroidTargetDevice: 0
+  AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/TestProjects/ArcharyTowerDiffence/iDreamz.keystore
+  AndroidKeyaliasName: idreamz
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
-  AndroidEnableTango: 0
   androidEnableBanner: 1
-  androidUseLowAccuracyLocation: 0
   m_AndroidBanners:
   - width: 320
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: f378f70646b4fba419f635560e9dc278, type: 3}
+      m_Width: 128
+      m_Height: 128
   m_BuildTargetBatching: []
-  m_BuildTargetGraphicsAPIs: []
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 0b0000000800000015000000
+    m_Automatic: 1
   m_BuildTargetVRSettings: []
-  m_BuildTargetEnableVuforiaSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
+  webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
-  mobileMTRendering:
-    Android: 1
-    iPhone: 1
-    tvOS: 1
   wiiUTitleID: 0005000011000000
   wiiUGroupID: 00010000
   wiiUCommonSaveSize: 4096
@@ -334,7 +331,7 @@ PlayerSettings:
   switchAccessibleURLs: 
   switchLegalInformation: 
   switchMainThreadStackSize: 1048576
-  switchPresenceGroupId: 
+  switchPresenceGroupId: 0x01004b9000490000
   switchLogoHandling: 0
   switchReleaseVersion: 0
   switchDisplayVersion: 1.0.0
@@ -346,8 +343,8 @@ PlayerSettings:
   switchUserAccountSaveDataSize: 0
   switchUserAccountSaveDataJournalSize: 0
   switchApplicationAttribute: 0
-  switchCardSpecSize: -1
-  switchCardSpecClock: -1
+  switchCardSpecSize: 4
+  switchCardSpecClock: 25
   switchRatingsMask: 0
   switchRatingsInt_0: 0
   switchRatingsInt_1: 0
@@ -361,7 +358,7 @@ PlayerSettings:
   switchRatingsInt_9: 0
   switchRatingsInt_10: 0
   switchRatingsInt_11: 0
-  switchLocalCommunicationIds_0: 
+  switchLocalCommunicationIds_0: 0x01004b9000490000
   switchLocalCommunicationIds_1: 
   switchLocalCommunicationIds_2: 
   switchLocalCommunicationIds_3: 
@@ -521,14 +518,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: StickMan
+  metroPackageName: ArcharyTowerDiffence
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: StickMan
+  metroApplicationDescription: ArcharyTowerDiffence
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -599,12 +596,13 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: 3a591a61-7949-4781-872c-0b6227a2d2bd
+  projectName: ArcharyTowerDiffence
+  organizationId: ashok-4448cf87-720b-435e-8efb-3617e0ee729d
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
