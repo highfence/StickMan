@@ -19,11 +19,16 @@ public class Player : MonoBehaviour
     private Upgrades _upgrades;
     private DataContainer _container;
 
+    Animator bowAnimator;
+
+
     private void Start()
     {
         _container = DataContainer.GetInstance();
 
         _upgrades = _container._upgrades;
+
+        bowAnimator = bow.GetComponent<Animator>();
     }
 
     private void Update()
@@ -35,6 +40,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            bowAnimator.SetBool("Aiming", true);
+            animator.SetBool("Aiming", true);
+
             var hitPlane = new Plane(transform.position, Vector3.up);
 
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -45,9 +53,10 @@ public class Player : MonoBehaviour
             {
                 var hitPoint = ray.GetPoint(distance);
 
+                // 이 지점으로 회전.
                 hitPoint.z = this.transform.position.z;
 
-                testCube.transform.position = hitPoint;
+                spine.LookAt(hitPoint);
             }
         }
     }
