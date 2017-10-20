@@ -11,8 +11,6 @@ public class LaunchManager : MonoBehaviour
     {
         Screen.SetResolution(800, 600, false);
 
-        DataContainer.Instance.SetScreenSize(800, 600);
-
         _loadingRenderer = this.GetComponent<SpriteRenderer>();
 
         StartCoroutine("PlayLoadingScene");
@@ -34,6 +32,6 @@ public class LaunchManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        SceneManager.LoadScene("1. Game");
+        SceneManager.LoadScene("1. Start");
     }
 }

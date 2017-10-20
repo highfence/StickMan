@@ -23,6 +23,7 @@ public class StartSceneManager : MonoBehaviour
     }
 
     const float walkRange = 0.4f;
+    const float walkSpeed = 0.2f;
 
     private void CameraWalk()
     {
@@ -30,7 +31,7 @@ public class StartSceneManager : MonoBehaviour
         {
             var curPos = _mainCam.transform.position;
 
-            curPos.x -= Time.deltaTime * 0.3f;
+            curPos.x -= Time.deltaTime * walkSpeed;
 
             _mainCam.transform.position = curPos;
 
@@ -41,7 +42,7 @@ public class StartSceneManager : MonoBehaviour
         {
             var curPos = _mainCam.transform.position;
 
-            curPos.x += Time.deltaTime * 0.3f;
+            curPos.x += Time.deltaTime * walkSpeed;
 
             _mainCam.transform.position = curPos;
 
@@ -49,4 +50,5 @@ public class StartSceneManager : MonoBehaviour
                 _isCameraWalkLeft = true;
         }
     }
+
 }

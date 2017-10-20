@@ -6,38 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/main menu.unity
-    guid: 2d4776d33ad9eae489583e49885727b0
+    path: Assets/Scenes/0. Launch.unity
+    guid: d6513a93bc1f23744906d42eb4134ca8
+  - enabled: 0
+    path: Assets/Scenes/1. Start.unity
+    guid: 40e0a79e776a218499c5eb09b3412b15
   - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 1.unity
-    guid: 26395ae01672e794ebc46b85aac54c66
+    path: Assets/Scenes/2. Game.unity
+    guid: 94de3cba965da6a4a823bdc85f2fda94
   - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 2.unity
-    guid: 0732eb5797507d74bb2fbce28be76e1b
+    path: Assets/Scenes/3. Store.unity
+    guid: 54f36c3d43ab3334eb229f85f39616e9
   - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 3.unity
-    guid: 76313a47005016c4bbaf5def651dfb78
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 4.unity
-    guid: 2e3b7843591dbcb45b65cc4b0cbecd54
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 5.unity
-    guid: 6d591614e09a5f349ad87183b3059b29
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 6.unity
-    guid: 8fbf8fa14e01dbd40ae387ad6b3d2e52
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 7.unity
-    guid: d36537b5d60dc2e4ba1319abfcdc1e9c
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 8.unity
-    guid: 73fe0cc8a2af9c24f8885d3b8ff12554
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 9.unity
-    guid: 772d0a0b84db1424eaeaa080a1998bad
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/Levels/Level 10.unity
-    guid: 3bf6ece65bd269249a6659e3ef810b69
-  - enabled: 1
-    path: Assets/Game/TD Archery GameKit/Assets/Scenes/tutorial.unity
-    guid: f1b7c0079b0984344bf33eaecc9e607d
+    path: Assets/Scenes/4. Score.unity
+    guid: c88f3f55dada255458f08077c427bda3
